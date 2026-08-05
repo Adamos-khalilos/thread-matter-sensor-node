@@ -80,3 +80,8 @@ and code compile correctly — no hardware required for that step.)
 - ESP-Matter SDK cloned, bootstrapped, and the official `light` example
   builds successfully for ESP32-C6 — confirms Matter/Thread toolchain
   compatibility ahead of hardware arrival
+  
+
+https://github.com/user-attachments/assets/c9024ec4-258f-4d9b-b6bd-0c8216befdbc
+
+
