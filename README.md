@@ -68,3 +68,15 @@ and code compile correctly — no hardware required for that step.)
 - [ ] Measure real current draw once running on a coin cell
 - [ ] Add OTA update support
 - [ ] Design custom PCB
+
+## Progress Log
+
+**Day 1-2:**
+- ESP-IDF v5.5.5 installed and verified on native Windows
+- Scaffold project builds cleanly for ESP32-C6 (`idf.py build`)
+- FreeRTOS task architecture validated end-to-end in Wokwi simulation
+  (sensor_task -> radio_task -> power_task data flow confirmed via serial logs)
+- WSL2 + Ubuntu environment set up for Linux-only ESP-Matter builds
+- ESP-Matter SDK cloned, bootstrapped, and the official `light` example
+  builds successfully for ESP32-C6 — confirms Matter/Thread toolchain
+  compatibility ahead of hardware arrival
