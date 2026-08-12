@@ -7,8 +7,12 @@ idf_component_register(
         "tasks/sensor_task.c"
         "tasks/radio_task.c"
         "tasks/power_task.c"
+        "drivers/bme280.c"
     INCLUDE_DIRS
         "."
         "tasks"
         "common"
+        "drivers"
+    REQUIRES
+        driver
 )
