@@ -19,6 +19,7 @@
 typedef struct {
     float temperature_c;
     float humidity_pct;
+    float pressure_hpa;
     int64_t timestamp_us;
 } sensor_reading_t;
 
