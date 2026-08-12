@@ -1,18 +1,7 @@
-# Registers every source file in this component so ESP-IDF's build
-# system picks them up. Add new .c files here as you create them.
+# Top-level ESP-IDF project file.
+# This is the standard boilerplate every ESP-IDF project needs.
 
-idf_component_register(
-    SRCS
-        "app_main.c"
-        "tasks/sensor_task.c"
-        "tasks/radio_task.c"
-        "tasks/power_task.c"
-        "drivers/bme280.c"
-    INCLUDE_DIRS
-        "."
-        "tasks"
-        "common"
-        "drivers"
-    REQUIRES
-        driver
-)
+cmake_minimum_required(VERSION 3.16)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(thread_matter_sensor_node)
